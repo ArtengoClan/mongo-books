@@ -1,2 +1,2 @@
-# Link to website
+# Link website
 https://mongo-books.vercel.app/
