@@ -1,0 +1,120 @@
+.App {
+    height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeButton  {
+    border: 1px solid rgb(69, 127, 129);
+    background-color: transparent;
+    transition: all .1s linear;
+}
+
+.homeButton:hover  {
+    border: 1px solid white;
+    background-color: rgb(69, 127, 129);
+    border-radius: 2px;
+}
+.homeButton:hover a {
+    color: white;
+
+}
+
+.homeButton a {
+    border: none;
+    color: rgb(69, 127, 129);
+    background-color: transparent;
+    transition: all .3s linear;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.book {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.divImg {
+    width: 200px;
+    height: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: aqua;
+}
+
+.delete {
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100);
+    transition: all .3s linear;
+}
+
+.delete:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(242, 100, 100);
+    border-radius: 3px;
+}
+
+.update {
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234);
+    transition: all .3s linear;
+}
+
+.update:hover {
+    border: 1px solid white;
+    background-color: rgb(204, 204, 243);
+    border-radius: 3px;
+}
+
+.update:hover a {
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton {
+    border: none;
+    padding: 10px;
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
