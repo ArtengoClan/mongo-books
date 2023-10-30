@@ -8,7 +8,7 @@ const Books = () => {
     useEffect( () => {
         const fetch = async () => {
             try {
-                const res = await axios.get('http://localhost:8800/books')
+                const res = await axios.get('https://mongo-books.onrender.com/books')
                 setBooks(res.data) 
             } catch (error) {
                 console.log(error)
@@ -19,7 +19,7 @@ const Books = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete('http://localhost:8800/books/' + id)
+            await axios.delete('https://mongo-books.onrender.com/books/' + id)
             window.location.reload()
         } catch (error) {
             console.log(error)

@@ -18,7 +18,7 @@ const Add = () => {
   const handleClick = async e => {
     e.preventDefault()
     try {
-      await axios.post('http://localhost:8800/books',book)
+      await axios.post('https://mongo-books.onrender.com/books',book)
       navigate('/')
     } catch (error) {
       console.log(error)
